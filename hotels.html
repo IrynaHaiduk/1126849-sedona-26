@@ -26,7 +26,7 @@
             <h1 class="visually-hidden">Список гостинниц в Седоне</h1>
             <img src="img/filter-background.jpg" width="1200" height="562" alt="">
             
-            <form method="get" action="#">
+            <form method="get" action="#" oninput="priceoutput.value=pricecount.value">
                 <fieldset>
                   <legend>Инфраструктура</legend>
                   <ul>
@@ -61,10 +61,17 @@
                         </li>
                         </ul>
                        </fieldset>
-                       <label for="price">Стоимость в сутки (Р):</label>
+                       <label for="pricecount">Стоимость в сутки (Р):</label>
                 
-                  <p>от 0 до 3000</p>
-                  <input type="range" min="0" max="3000" id="price"><br>
+                       <div>
+                            от 0
+                            
+                          </div>
+                  <div>
+                        до 
+                        <output name="priceoutput">3000</output>
+                      </div>
+                  <input type="range" min="0" max="3500" id="pricecount" value="3000"><br>
                   <button type="submit">Показать</button>
                 
                  
