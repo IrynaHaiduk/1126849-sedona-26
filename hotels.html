@@ -25,57 +25,55 @@
         <section class="filter">
             <h1 class="visually-hidden">Список гостинниц в Седоне</h1>
             <img src="img/filter-background.jpg" width="1200" height="562" alt="">
-            
+
             <form method="get" action="#" oninput="priceoutput.value=pricecount.value">
                 <fieldset>
-                  <legend>Инфраструктура</legend>
-                  <ul>
-                  <li>
-                        <input type="checkbox" name="infrastructure" id="swimming-pool" checked>
-                        <label for="swimming-pool">Бассейн</label>
-                  </li>
-                  <li>
-                        <input type="checkbox" name="infrastructure" id="parking">
-                        <label for="parking">Парковка</label>
-                  </li>
-                  <li>
-                        <input type="checkbox" name="infrastructure" id="wi-fi">
-                        <label for="wi-fi">Wi-Fi</label>
-                  </li>
-                  </ul>
-                 </fieldset>
-                 <fieldset>
-                        <legend>Тип жилья</legend>
-                        <ul>
+                    <legend>Инфраструктура</legend>
+                    <ul>
                         <li>
-                              <input type="checkbox" name="house-type" id="hotel" checked>
-                              <label for="hotel">Гостинница</label>
+                            <input type="checkbox" name="infrastructure" id="swimming-pool" checked>
+                            <label for="swimming-pool">Бассейн</label>
                         </li>
                         <li>
-                              <input type="checkbox" name="house-type" id="motel" checked>
-                              <label for="motel">Мотель</label>
+                            <input type="checkbox" name="infrastructure" id="parking">
+                            <label for="parking">Парковка</label>
                         </li>
                         <li>
-                              <input type="checkbox" name="house-type" id="apartments" checked>
-                              <label for="apartments">Апартаменты</label>
+                            <input type="checkbox" name="infrastructure" id="wi-fi">
+                            <label for="wi-fi">Wi-Fi</label>
                         </li>
-                        </ul>
-                       </fieldset>
-                       <label for="pricecount">Стоимость в сутки (Р):</label>
-                
-                       <div>
-                            от 0
-                            
-                          </div>
-                  <div>
-                        до 
-                        <output name="priceoutput">3000</output>
-                      </div>
-                  <input type="range" min="0" max="3500" id="pricecount" value="3000"><br>
-                  <button type="submit">Показать</button>
-                
-                 
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="house-type" id="hotel" checked>
+                            <label for="hotel">Гостинница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="house-type" id="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="house-type" id="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <label for="pricecount">Стоимость в сутки (Р):</label>
 
+                <div>
+                    от 0
+                </div>
+                <div>
+                    до
+                    <output name="priceoutput">3000</output>
+                </div>
+                <input type="range" min="0" max="3500" id="pricecount" value="3000"><br>
+                <button type="submit">Показать</button>
+                <div> Найдено: 3 Сортировка: По цене: По типу: По рейтингу</div>
+                 <!-- Не знаю как правильно разметить данный блок информации -->
             </form>
         </section>
         <section>
