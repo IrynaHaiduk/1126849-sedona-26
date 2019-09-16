@@ -61,19 +61,51 @@
                         </li>
                     </ul>
                 </fieldset>
-                <label for="pricecount">Стоимость в сутки (Р):</label>
-
                 <div>
-                    от 0
+                    <label for="pricecount">Стоимость в сутки (Р):</label>
+                    <div class="price-filter">
+                        от <output name="priceoutput">0</output>
+                    </div>
+                    <div>
+                        до <output name="priceoutput">3000</output>
+                    </div>
+                    <input type="range" min="0" max="3500" id="pricecount" value="3000"><br>
+                    <button type="submit">Показать</button>
                 </div>
-                <div>
-                    до
-                    <output name="priceoutput">3000</output>
-                </div>
-                <input type="range" min="0" max="3500" id="pricecount" value="3000"><br>
-                <button type="submit">Показать</button>
-                <div> Найдено: 3 Сортировка: По цене: По типу: По рейтингу</div>
-                 <!-- Не знаю как правильно разметить данный блок информации -->
+            </form>
+            <form method="get" action="#">
+                <p>Найдено: 3</p>
+                <!--Не знаю как правильно разметить данный элемент-->
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="filter-type" value="price" id="price-filter" checked>
+                            <label for="price-filter">По цене</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="filter-type" value="type" id="type-filter">
+                            <label for="type-filter">По типу</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="filter-type" value="rating" id="rating-filter">
+                            <label for="rating-filter">По рейтингу</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend class="visually-hidden">Направление сортировки</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="sort-direction" value="smaller" id="smaller-direction">
+                            <label for="smaller-direction">Меньше</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sort-direction" value="greater" id="greater-direction" checked>
+                            <label for="greater-direction">Больше</label>
+                        </li>
+                    </ul>
+                </fieldset>
             </form>
         </section>
         <section>
@@ -143,18 +175,25 @@
         <div>
             <ul class="social-pages">
                 <li><a href="#"><img src="img/twitter-icon.svg" width="17" height="15"
-                            alt="Гостинницы в Седоне в Twitter">Twitter</a></li>
+                            alt="Гостинницы в Седоне в Twitter">Twitter
+                    </a>
+                </li>
                 <li><a href="#"><img src="img/facebook-icon.svg" width="12" height="22"
-                            alt="Гостинницы в Седоне на Facebook">Facebook</a></li>
+                            alt="Гостинницы в Седоне на Facebook">Facebook
+                    </a>
+                </li>
                 <li><a href="#"><img src="img/youtube-icon.svg" width="20" height="16"
-                            alt="Гостинницы в Седоне в Youtube">Youtube</a></li>
+                            alt="Гостинницы в Седоне в Youtube">Youtube
+                    </a>
+                </li>
             </ul>
         </div>
         <p>
             <span class="copyright">
                 Website by
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115"
-                        height="41" alt="Логотип HTML Academy"></a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+                </a>
             </span>
         </p>
     </footer>
