@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Гайдук](https://up.htmlacademy.ru/htmlcss/26/user/1126849).
-* Наставник: [Ксюша Щанникова] (https://htmlacademy.ru/profile/ksenia-ok)
+* Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim)
 
 ---
 
