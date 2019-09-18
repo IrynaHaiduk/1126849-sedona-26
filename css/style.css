@@ -84,6 +84,11 @@ body {
     color: #ffffff;
     background-color: #81b3d2;
   }
+  .benefits-item:nth-of-type(3), 
+  .benefits-item:nth-of-type(4),
+  .benefits-item:nth-of-type(5) {
+  background-color: #eeeeee;
+}
   
   .search h2 {
       font-size: 30px;
