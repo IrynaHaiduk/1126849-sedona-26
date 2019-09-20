@@ -15,7 +15,6 @@
 }
 body {
 	margin: 0 auto;
-	padding: 0 40px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -286,12 +285,15 @@ a {
 	list-style: none;
 }
 .social-button {
-	width: 45px;
+	width: 35px;
+	margin: 5px;
+	padding: 10px;
 	background-color: #81b3d2;
 	text-align: center;
 }
-.social-button a {
-	color: #ffffff;
+.social-button img {
+	vertical-align: middle;
+	text-align: center;
 }
 .social-button a:hover, .social-button a:focus {
 	background-color: #669ec0;
