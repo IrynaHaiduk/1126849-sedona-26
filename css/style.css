@@ -1,19 +1,25 @@
 @font-face {
-	font-family: 'PT Sans';
+	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 400;
 	src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot');
 	src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'PT Sans';
+	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 700;
 	src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot');
-   /* IE9 Compat Modes */
 	src: local('PT Sans Bold'), local('PTSans-Bold'), url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2');
 }
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
 body {
+	width: 1200px;
 	margin: 0 auto;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -30,6 +36,26 @@ body {
 	height: 1px;
 	margin: -1px;
 }
+.main-header-logo {
+	width: 140px;
+	height: 72px;
+	margin-top: 0;
+}
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	height: 55px;
+}
+.main-header-logo {
+	width: 140px;
+	height: 72px;
+	margin-top: 0;
+}
 .site-navigation-current {
 	color: #766357;
 }
@@ -40,6 +66,7 @@ body {
 	background-size: 1201px 59px, 459px 353px, 1200px 800px;
 	background-repeat: no-repeat;
 	background-position: center 742px, center 160px, center;
+	margin-top: 0;
 }
 a {
 	text-decoration: none;
@@ -221,6 +248,15 @@ a {
 }
 .hotels-list {
 	list-style: none;
+	width: 1056px;
+	display: flex;
+	flex-direction: column;
+}
+.hotels-item {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 0;
+	padding-left: 0;
 }
 .hotels-item h3 {
 	color: #000000;
@@ -272,14 +308,20 @@ a {
 .main-footer {
 	color: #000000;
 	background-color: #ffffff;
+	padding-left: 130px;
+	padding-right: 100px;
+	display: flex;
 }
 .hashteg {
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
+	width: 140px;
+	margin-right: 255px;
 }
 .footer-social {
 	text-align: center;
+	width: 153px;
 }
 .footer-social ul {
 	list-style: none;
@@ -304,6 +346,8 @@ a {
 }
 .footer-copyright {
 	text-align: center;
+	width: 203px;
+	margin-left: auto;
 }
 .footer-copyright span {
 	line-height: 26px;
