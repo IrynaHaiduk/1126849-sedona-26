@@ -151,6 +151,9 @@ a {
 .benefits-item span {
 	line-height: 21px;
 	font-weight: normal;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .benefits-list .white {
@@ -158,7 +161,7 @@ a {
 	background-color: #81b3d2;
 	width: 400px;
 	padding-top: 45px;
-	padding-bottom: 47px;
+	padding-bottom: 65px;
 }
 
 .benefits-container {
@@ -170,6 +173,10 @@ a {
 	color: #ffffff;
 	background-color: #81b3d2;
 	margin: 0;
+}
+
+.white h3 {
+    margin: 0;
 }
 
 .benefits-item:nth-of-type(3),
@@ -466,7 +473,7 @@ a {
 
 .book {
 	line-height: 21px;
-	color: white;
+	color: #ffffff;
 	background-color: #766357;
 }
 
