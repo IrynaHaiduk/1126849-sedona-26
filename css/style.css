@@ -389,6 +389,11 @@ a {
 	width: 1056px;
 }
 
+.hotels-image {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 .hotels-item h3 {
 	color: #000000;
 	margin-top: 0;
