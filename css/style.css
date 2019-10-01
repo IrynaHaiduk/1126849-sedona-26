@@ -262,6 +262,10 @@ a {
 	padding-bottom: 60px;
 }
 
+.search {
+	position: relative;
+}
+
 .search h2 {
 	font-size: 30px;
 	line-height: 36px;
@@ -288,12 +292,15 @@ a {
 	width: 570px;
 	align-items: center;
 	justify-content: space-between;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 78px;
-	padding-bottom: 54px;
 	flex-wrap: wrap;
 	box-sizing: border-box;
+	z-index: 15;
+	padding-top: 53px;
+	position: absolute;
+	top: 292px;
+	left: 316px;
+	box-shadow: 0 7px 5px 0  #bbb7b0;
+	background-color: #ffffff;
 }
 
 .search-form fieldset {
@@ -316,8 +323,8 @@ a {
 	text-align: center;
 	padding-left: 15px;
 	margin: 0 auto;
-	margin-bottom: 52px;
-	border: none;	
+	border: none;
+	margin-bottom: 475px;	
 }
 
 .search-button:hover,
@@ -338,6 +345,27 @@ a {
     justify-content: space-between
 }
 
+.search-item:nth-of-type(1),
+.search-item:nth-of-type(2) {
+	position: relative;
+}
+
+.calendar {
+	position: absolute;
+	opacity: 0.5;
+	left: 428px;
+    top: 8px;
+}
+
+.calendar:hover path,
+.calendar:focus path {
+	fill-opacity: 1;
+}
+
+.calendar:active path {
+	fill: #81b3d2;
+}
+
 .search-item input {
 	font: inherit;
 	line-height: 26px;
@@ -348,10 +376,20 @@ a {
 	text-transform: uppercase;
 }
 
+.search-item input:hover {
+background-color: #ebebeb;
+}
+
+.search-item input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+	outline: none;
+}
+	
 .search-item label {
 	line-height: 120%;
 	display: block;
-	padding-top: 13px;
+	padding-top: 12px;
 }
 
 .search-item input:hover {
@@ -364,7 +402,7 @@ a {
 }
 
 .search-item:nth-of-type(3) {
-	margin-bottom: 52px;
+	margin-bottom: 63px;
 }
 
 .search-wrap {
@@ -374,13 +412,71 @@ a {
 }
 .search-wrap .amount-input {
 	width: 115px;
+	position: relative;
 }
 
-.search-wrap .adults-amount
+.amount-input::before {
+	content: "-";
+	color: #000000;
+	opacity: 0.5;
+	padding: 15px 10px;
+	position: absolute;
+	width: 12px;
+	height: 3px;
+	font-size: 14px;
+	font-weight: 700;
+
+}
+
+.amount-input::after {
+	content: "+";
+	color: #000000;
+	opacity: 0.5;
+	padding: 15px 10px;
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.plus {
+	width: 31px;
+	height: 31px;
+	border: 1px solid #B4B4B4;
+	position: relative;
+  }
+
+  .plus:before {
+	content: '';  
+	width: 25px;
+	height: 1px;
+	border-top: 1px solid #B4B4B4;
+	display: block;
+	position: absolute;
+
+  }
+
+  .plus:after {
+	content: '';  
+	width: 1px;
+	height: 25px;
+	border-right: 1px solid #B4B4B4;
+	display: block;
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 14px;
+  }
+
+.search-wrap .adults-amount,
 .search-wrap .children-amount {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: 230px;
+}
+.children-amount label {
+	padding-left: 51px;
 }
 
 .search-hotels {
@@ -393,9 +489,9 @@ a {
 	text-transform: uppercase;
 	background-color: #81b3d2;
 	border: none;
-	padding: 17px 0;
+	padding: 16px 0;
 	display: block;
-	width: 460px;
+	width: 459px;
 	margin-bottom: 55px;
 }
 
@@ -407,6 +503,15 @@ a {
 .search-hotels:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
+}
+
+.sedona-map {
+	position: relative;
+	width: 1200px;
+	height: 593px;
+	top: -475px;
+	z-index: 1;
+
 }
 
 .filter {
@@ -622,17 +727,18 @@ a {
 	background-color: #503e33;
 }
 
-
-
 .main-footer {
 	color: #000000;
-	background-color: #ffffff;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding-top: 36px;
-	padding-bottom: 36px;
-	opacity: 0,9;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-left: 130px;
+    padding-right: 100px;
+    position: relative;
+    z-index: 15;
+    margin-top: -596px;
 }
 
 .hashteg {
@@ -640,6 +746,7 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	width: 140px;
+	margin-right: 254px;
 }
 
 .socials {
@@ -650,11 +757,12 @@ a {
 	list-style: none;
 	padding: 0;
 	flex-wrap: wrap;
+	margin-right: 230px;
 }
 
 .social-button {
-	width: 47px;
-	height: 47px;
+	width: 46px;
+	height: 48px;
 	display: flex;
 	background-color: #81b3d2;
 	align-items: center;
