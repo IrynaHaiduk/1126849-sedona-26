@@ -123,55 +123,56 @@
                       </div>
                 </form>
             </section>
+            
             <section class="sorting-hotels">
                 <h2 class="visually-hidden">
                     Сортировка гостинниц
                 </h2>
                 <form class="sorting" method="get" action="#">
-                    <p>
-                        Найдено:3
-                    </p>
-                    <fieldset>
-                        <legend>
+                    <span>
+                        Найдено: 3
+                    </span>
+                    <div class="sorting-hotels-type">
+                        <div class="sorting-hotels-title">
                             Сортировка:
-                        </legend>
-                        <ul>
+                        </div>
+                        <ul class="sorting-hotels-list">
                             <li>
-                                <input class="sorting-input" type="radio" name="filter-type" value="price"
+                                <input class="sorting-input visually-hidden" type="radio" name="filter-type" value="price"
                                     id="price-filter" checked>
                                 <label for="price-filter">
                                     По цене
                                 </label>
                             </li>
                             <li>
-                                <input class="sorting-input" type="radio" name="filter-type" value="type"
+                                <input class="sorting-input visually-hidden" type="radio" name="filter-type" value="type"
                                     id="type-filter">
                                 <label for="type-filter">
                                     По типу
                                 </label>
                             </li>
                             <li>
-                                <input class="sorting-input" type="radio" name="filter-type" value="rating"
+                                <input class="sorting-input visually-hidden" type="radio" name="filter-type" value="rating"
                                     id="rating-filter">
                                 <label for="rating-filter">
                                     По рейтингу
                                 </label>
                             </li>
                         </ul>
-                    </fieldset>
-                    <fieldset>
+                    </div>
+                    <fieldset class="fieldset-direction">
                         <legend class="visually-hidden">
                             Направление сортировки
                         </legend>
                         <ul class="sorting-direction">
                             <li>
-                                <input type="radio" name="sort-direction" value="smaller" id="smaller-direction">
+                                <input class="visually-hidden" type="radio" name="sort-direction" value="smaller" id="smaller-direction">
                                 <label for="smaller-direction">
                                     Меньше
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" name="sort-direction" value="greater" id="greater-direction"
+                                <input class="visually-hidden" type="radio" name="sort-direction" value="greater" id="greater-direction"
                                     checked>
                                 <label for="greater-direction">
                                     Больше
@@ -187,11 +188,11 @@
                 </h2>
                 <ul class="hotels-list">
                     <li class="hotels-item">
-                        <a href="#">
-                            <p class="hotels-image">
+                        <a href="#" class="hotels-image">
+                            
                                 <img src="img/amara-resort-and-spa.jpg" width="135" height="90"
                                     alt="Изображение гостинницы Amara Resort & Spa">
-                            </p>
+                            
                         </a>
                         <div class="hotels-information">
                             <a href="#">
@@ -311,6 +312,7 @@
                     </li>
                 </ul>
             </section>
+        
         </main>
 
         <footer class="main-footer">
