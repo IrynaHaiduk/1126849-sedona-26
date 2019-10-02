@@ -57,20 +57,20 @@
                             </legend>
                             <ul class="filter-list">
                                 <li>
-                                    <input class="filter-input" type="checkbox" name="infrastructure" id="swimming-pool"
+                                    <input class="filter-input visually-hidden" type="checkbox" name="infrastructure" id="swimming-pool"
                                         checked>
                                     <label for="swimming-pool">
                                         Бассейн
                                     </label>
                                 </li>
                                 <li>
-                                    <input class="filter-input" type="checkbox" name="infrastructure" id="parking">
+                                    <input class="filter-input visually-hidden" type="checkbox" name="infrastructure" id="parking">
                                     <label for="parking">
                                         Парковка
                                     </label>
                                 </li>
                                 <li>
-                                    <input class="filter-input" type="checkbox" name="infrastructure" id="wi-fi">
+                                    <input class="filter-input visually-hidden" type="checkbox" name="infrastructure" id="wi-fi">
                                     <label for="wi-fi">
                                         Wi-Fi
                                     </label>
@@ -85,19 +85,19 @@
                             </legend>
                             <ul class="filter-list">
                                 <li>
-                                    <input class="filter-input" type="checkbox" name="house-type" id="hotel" checked>
+                                    <input class="filter-input visually-hidden" type="checkbox" name="house-type" id="hotel" checked>
                                     <label for="hotel">
                                         Гостинница
                                     </label>
                                 </li>
                                 <li>
-                                    <input class="filter-input" type="checkbox" name="house-type" id="motel" checked>
+                                    <input class="filter-input visually-hidden" type="checkbox" name="house-type" id="motel" checked>
                                     <label for="motel">
                                         Мотель
                                     </label>
                                 </li>
                                 <li>
-                                    <input class="filter-input" type="checkbox" name="house-type" id="apartments"
+                                    <input class="filter-input visually-hidden" type="checkbox" name="house-type" id="apartments"
                                         checked>
                                     <label for="apartments">
                                         Апартаменты
@@ -106,30 +106,24 @@
                             </ul>
                         </fieldset>
                     </div>
-                    <div class="price-filter">
-                        <label for="pricecount">
-                            Стоимость в сутки (Р):
-                        </label>
-                        <div>
-                            от
-                            <output name="priceoutput">
-                                0
-                            </output>
+                    <div class="filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="price-controls">
+                          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                         </div>
-                        <div>
-                            до
-                            <output name="priceoutput">
-                                3000
-                            </output>
+                        <div class="range-controls">
+                          <div class="scale">
+                            <div class="bar"></div>
+                          </div>
+                          <div class="range-toggle range-toggle-min"></div>
+                          <div class="range-toggle range-toggle-max"></div>
                         </div>
-                        <input type="range" min="0" max="3500" id="pricecount" value="3000"><br>
-                        <button type="submit" class="button-show">
-                            Показать
-                        </button>
-                    </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                      </div>
                 </form>
             </section>
-            <section class="sortings">
+            <section class="sorting-hotels">
                 <h2 class="visually-hidden">
                     Сортировка гостинниц
                 </h2>
