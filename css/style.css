@@ -86,10 +86,6 @@ input[type="radio"].visually-hidden {
 	padding: 15px 72px;		
 }
 
-.site-navigation a {
- 
-}
-
 .site-navigation-item {
 	width: 242px;	
 }
@@ -297,9 +293,6 @@ a {
 	z-index: 15;
 	padding-top: 53px;
 	margin: 0 auto;
-	/* position: absolute; */
-	/* top: 292px; */
-	/* left: 316px; */
 	box-shadow: 0 7px 5px 0  #bbb7b0;
 	background-color: #ffffff;
 }
@@ -325,7 +318,6 @@ a {
 	padding-left: 15px;
 	margin: 0 auto;
 	border: none;
-	/* margin-bottom: 475px;	 */
 }
 
 .search-button:hover,
@@ -378,7 +370,7 @@ a {
 }
 
 .search-item input:hover {
-background-color: #ebebeb;
+    background-color: #ebebeb;
 }
 
 .search-item input:focus {
@@ -448,8 +440,6 @@ background-color: #ebebeb;
 	position: relative;
   }
 
- 
-
 .search-wrap .adults-amount,
 .search-wrap .children-amount {
 	display: flex;
@@ -492,9 +482,9 @@ background-color: #ebebeb;
 	width: 1200px;
 	height: 593px;
 	bottom: -199px;
-	/* top: -475px; */
 	z-index: 1;
 }
+
 .form-wrap {
 	position: relative;
 	z-index: 10;
@@ -573,14 +563,14 @@ background-color: #ebebeb;
 	background-position: 0 0;
 	left: -40px;
     top: -2px;
-  }
+}
 
-  .filter-input:not(:checked):disabled + label::before {
+.filter-input:not(:checked):disabled + label::before {
 	opacity: 0.5;
 
-  }
+}
 
-  .filter-input:checked + label::before {
+.filter-input:checked + label::before {
 	content: "";
 	position: absolute;
 	width: 27px;
@@ -589,155 +579,136 @@ background-color: #ebebeb;
     background-repeat: no-repeat;
 	background-position: 0 0;
 	left: -40px;
-    top: -2px;
-	;
-  }
+	top: -2px;
+}
 
-  .filter-input:checked:disabled + label::before {
+.filter-input:checked:disabled + label::before {
 	opacity: 0.5;
-  }
-
+}
 
 .filter label {
 	position: relative;
 	display: block;
 	cursor: pointer;
 	user-select: none;
-  }
+}
 
-  .filter-range {
+.filter-range {
 	width: 330px;
-	margin-left: auto; /* для демо */
+	margin-left: auto; 
     color: #ffffff;
 	text-transform: uppercase;
-  }
+}
   
-  .filter-range-title {
+.filter-range-title {
 	margin-bottom: 9px;
-  
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 21px;
-  }
+}
   
-  .price-controls {
+.price-controls {
 	position: relative;
-	
 	height: 36px;
 	margin-bottom: 20px;
-	
 	font-size: 0;
-  
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	width: 317px;
-  }
+}
   
-  .price-controls::after {
+.price-controls::after {
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: 50%;
-  
 	width: 2px;
 	height: 22px;
-  
 	background: #ffffff;
 	transform: translate(-50%, -50%);
-  }
+}
   
-  .price-controls label {
+.price-controls label {
 	display: inline-block;
-  
 	font-size: 14px;
 	line-height: 32px;
 	vertical-align: middle;
-  
 	cursor: pointer;
-  }
+}
   
-  .price-controls .min-price,
-  .price-controls .max-price {
+.price-controls .min-price,
+.price-controls .max-price {
 	width: 145px;
 	padding-left: 64px;
-  }
+}
   
-  .price-controls input {
+.price-controls input {
 	width: 50px;
 	margin: 0;
-  
 	color: inherit;
 	font: inherit;
-  
 	background: none;
 	border: none;
-  }
+}
   
-  .range-controls {
+.range-controls {
 	position: relative;
-  
 	margin-bottom: 32px;
-  }
+}
   
-  .range-controls .scale {
+.range-controls .scale {
 	height: 2px;
-  
 	background: rgba(255, 255, 255, 0.3);
 	width: 316px;
-  }
+}
   
-  .range-controls .bar {
+.range-controls .bar {
 	width: 85%;
 	height: 2px;
-  
 	background: #ffffff;
-  }
+}
   
-  .range-toggle {
+.range-toggle {
 	position: absolute;
 	top: -9px;
-	
 	width: 4px;
 	height: 4px;
-  
 	background: #ababab;
 	border: 10px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
-	
   }
-  .range-toggle:after {
+
+.range-toggle:after {
 	content: "•";
     color: #b1b1b1;
     font-size: 13px;
     position: absolute;
     right: -3px;
     top: -7px;
+  }
 
-  }
-  .range-toggle:hover {
+.range-toggle:hover {
 	background: #1c4f80;
-  }
+}
   
-  .range-toggle-min {
+.range-toggle-min {
 	left: 0;
-  }
+}
   
-  .range-toggle-max {
+.range-toggle-max {
 	left: 76%;
-  }
+}
   
-  .btn-transparent {
+.btn-transparent {
 	display: block;
 	margin-left: 84px;
 	padding: 7px 33px;
-  
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
-  
 	background: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -745,13 +716,11 @@ background-color: #ebebeb;
 	width: 136px;
   }
   
-  .btn-transparent:hover {
+.btn-transparent:hover {
 	color: #000000;
-  
 	background: #ffffff;
-  }
+}
   
-
 .button-show {
 	font-size: 14px;
 	line-height: 21px;
@@ -788,11 +757,10 @@ background-color: #ebebeb;
 
 .sorting-hotels-list li {
 	margin-right: 33px;
-
 }
 
 .sorting-hotels-title {
-margin-right: 40px;
+    margin-right: 40px;
 }
 
 .sorting span {
@@ -827,13 +795,32 @@ margin-right: 40px;
 	margin: 0;
 	list-style: none;
 	display: flex;
+	margin-left: auto;
+	justify-content: space-between;
+    width: 35px;	
 }
 
-.fieldset-direction {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	margin-left: auto;
+.sorting-direction label {
+	display: block;
+	cursor: pointer;
+	user-select: none;	
+}
+
+.sorting-direction li path {
+  fill: #cacaca;
+}
+
+.sorting-direction li:hover path, 
+.sorting-direction li:focus path {
+	fill: #000000;
+}
+
+.sorting-direction li:active path {
+	fill: #81b3d2;
+}
+
+.sorting-direction-input:checked ~ path {
+	fill: #81b3d2;
 }
 
 .hotels-list {
@@ -862,8 +849,10 @@ margin-right: 40px;
 
 .hotels-item h3 {
 	color: #000000;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+	line-height: 14px;
 }
 
 .hotels-item h3:hover,
@@ -875,9 +864,10 @@ margin-right: 40px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels-item h3 {
-	font-size: 21px;
-	line-height: 26px;
+.hotels-type-price {
+	display: flex;
+	width: 179px;
+	justify-content: space-between;
 }
 
 .hotels-type,
@@ -898,6 +888,11 @@ margin-right: 40px;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 260px;
+}
+
+.hotels-button {
+	display: inline-block;
+	padding: 3px 17px;
 }
 
 .stars-rating {
@@ -938,7 +933,7 @@ margin-right: 40px;
 }
 
 .book:hover,
-.more-details:focus {
+.book:focus {
 	background-color: #604e43;
 }
 
@@ -959,7 +954,6 @@ margin-right: 40px;
 }
 
 .transparent {
-	/* margin-top: -596px; */
 	margin-top: 76px;
 	background-color: rgba(255, 255, 255, 0.9);	
 	z-index: 15;
@@ -1050,16 +1044,18 @@ margin-right: 40px;
 	font-size: 20px;
 	color:#a9a9a9;
 }
+
 .input-range-elem-minus:hover,
 .input-range-elem-plus:hover {
 	color:#000;
 } 
+
 .input-range-elem-minus:active,
 .input-range-elem-plus:active {
 	color:#81b3d2;
 } 
+
 .input-range-elem .amount-input {
 	width: 52px;
-	text-align: center;
-	   
+	text-align: center;   
 }
