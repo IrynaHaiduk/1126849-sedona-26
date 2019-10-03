@@ -819,7 +819,7 @@ a {
 	fill: #81b3d2;
 }
 
-.sorting-direction-input:checked ~ path {
+.sorting-direction input:checked + svg  {
 	fill: #81b3d2;
 }
 
