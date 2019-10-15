@@ -1069,12 +1069,18 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-close {
-	display: none;
+	opacity: 0;
+	z-index: -1;
+	
 }
 
 .modal-show {
-	display: block;
-	animation: bounce 6s;
+	opacity: 1;
+	z-index: 1;
+	animation-name: bounce;
+	animation-duration: 6s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 .modal-error {
@@ -1082,12 +1088,17 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes bounce {
-	0% {
-		transform: translateY(-100%);
+	
+0% {
+	
+	transform: translateY(-100%);
 	}
-	100% {
-		transform: translateY(100%);
+
+100% {
+	
+	transform: translateY(0%);
 	}
+	
 }
 
 @keyframes shake {
