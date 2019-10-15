@@ -26,7 +26,6 @@ search.addEventListener("submit", function (evt) {
       evt.preventDefault();
       if (form.classList.contains("modal-show")) {
         form.classList.remove("modal-show");
-        form.classList.add("modal-error");
 
       }
     }
