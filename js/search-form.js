@@ -14,18 +14,13 @@
 	button.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		popup.classList.add("modal-show");
-		date.focus();
 	});
-
-  function removeModalErrorClass () {
-    popup.classList.remove("modal-error");
-  }
   
 	search.addEventListener("submit", function (evt) {
 		evt.preventDefault();
 		if (!date.value || !date2.value || !amount1.value || !amount2.value) {
       popup.classList.add("modal-error");
-      setTimeout(removeModalErrorClass, 500);
+      
 		}
 	});
 

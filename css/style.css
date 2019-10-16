@@ -386,6 +386,10 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
+.search-item ::placeholder {
+	color: #000000;
+}
+
 .search-item input:hover {
 	background-color: #ebebeb;
 }
@@ -423,37 +427,6 @@ input[type="radio"].visually-hidden {
 
 .search-wrap .amount-input {
 	width: 115px;
-	position: relative;
-}
-
-.amount-input::before {
-	content: "-";
-	color: #000000;
-	opacity: 0.5;
-	padding: 15px 10px;
-	position: absolute;
-	width: 12px;
-	height: 3px;
-	font-size: 14px;
-	font-weight: 700;
-}
-
-.amount-input::after {
-	content: "+";
-	color: #000000;
-	opacity: 0.5;
-	padding: 15px 10px;
-	position: absolute;
-	width: 11px;
-	height: 11px;
-	font-size: 14px;
-	font-weight: 700;
-}
-
-.plus {
-	width: 31px;
-	height: 31px;
-	border: 1px solid #B4B4B4;
 	position: relative;
 }
 
@@ -1051,29 +1024,66 @@ input[type="radio"].visually-hidden {
 
 .input-range-elem {
 	display: flex;
+
 }
 
 .input-range-elem-minus,
 .input-range-elem-plus {
-	background-color: #f2f2f2;
+	
 	width: 32px;
-	height: 31px;
 	line-height: 31px;
 	text-align: center;
 	font-weight: bold;
 	cursor: pointer;
 	font-size: 20px;
-	color: #a9a9a9;
+	background-color: #f2f2f2;
+	position: relative;
 }
 
-.input-range-elem-minus:hover,
-.input-range-elem-plus:hover {
-	color: #000;
+.input-range-elem-minus::before {
+	content: "";
+
+	position: absolute;
+	z-index: 3;
+	top: 20px;
+	left: 14px;
+  
+	width: 12px;
+	height: 3px;
+	background-color: #a9a9a9;
+	
 }
 
-.input-range-elem-minus:active,
-.input-range-elem-plus:active {
-	color: #81b3d2;
+.input-range-elem-plus::before,
+.input-range-elem-plus::after {
+	content: "";
+
+	position: absolute;
+	z-index: 3;
+	top: 20px;
+	left: 6px;
+  
+	width: 12px;
+	height: 3px;
+	background-color: #a9a9a9;	
+}
+.input-range-elem-plus::after {
+	transform: rotate(90deg);
+}
+
+.input-range-elem-minus:hover .input-range-elem-minus::before,
+.input-range-elem-minus:focus .input-range-elem-minus::before,
+.input-range-elem-plus:hover .input-range-elem-plus::before,
+.input-range-elem-plus:focus .input-range-elem-plus::before,  
+.input-range-elem-plus:hover .input-range-elem-plus::after,
+.input-range-elem-plus:focus .input-range-elem-plus::after {
+	background-color: #000;
+}
+
+.input-range-elem-minus:active .input-range-elem-minus::before,
+.input-range-elem-plus:active .input-range-elem-plus::before,
+.input-range-elem-plus:active .input-range-elem-plus::after {
+	background-color: #81b3d2;
 }
 
 .input-range-elem .amount-input {
@@ -1091,7 +1101,7 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 	z-index: 1;
 	animation-name: bounce;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 }
@@ -1114,7 +1124,7 @@ input[type="radio"].visually-hidden {
 
 100% {
 	
-	transform: translateY(0);
+	transform: translate(0, 0);
 	}
 	
 }
@@ -1122,7 +1132,7 @@ input[type="radio"].visually-hidden {
 @keyframes shake {
 	0%,
 	100% {
-		transform: translateX(0);
+		transform: translate(0, 0);
 	}
 	10%,
 	30%,
