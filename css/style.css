@@ -99,17 +99,17 @@ input[type="radio"].visually-hidden {
 	width: 242px;
 }
 
-.site-navigation-item:nth-of-type(1),
-.site-navigation-item:nth-of-type(2) {
+.site-navigation-item:nth-of-type(4n+1),
+.site-navigation-item:nth-of-type(4n+2) {
 	text-align: left;
 }
 
-.site-navigation-item:nth-of-type(3),
-.site-navigation-item:nth-of-type(4) {
+.site-navigation-item:nth-of-type(4n+3),
+.site-navigation-item:nth-of-type(4n+4) {
 	text-align: right;
 }
 
-.site-navigation-item:nth-of-type(2) {
+.site-navigation-item:nth-of-type(4n+2) {
 	margin-right: auto;
 }
 
@@ -1071,18 +1071,18 @@ input[type="radio"].visually-hidden {
 	transform: rotate(90deg);
 }
 
-.input-range-elem-minus:hover .input-range-elem-minus::before,
-.input-range-elem-minus:focus .input-range-elem-minus::before,
-.input-range-elem-plus:hover .input-range-elem-plus::before,
-.input-range-elem-plus:focus .input-range-elem-plus::before,  
-.input-range-elem-plus:hover .input-range-elem-plus::after,
-.input-range-elem-plus:focus .input-range-elem-plus::after {
+.input-range-elem-minus:hover::before,
+.input-range-elem-minus:focus::before,
+.input-range-elem-plus:hover::before,
+.input-range-elem-plus:focus::before,  
+.input-range-elem-plus:hover::after,
+.input-range-elem-plus:focus::after {
 	background-color: #000;
 }
 
-.input-range-elem-minus:active .input-range-elem-minus::before,
-.input-range-elem-plus:active .input-range-elem-plus::before,
-.input-range-elem-plus:active .input-range-elem-plus::after {
+.input-range-elem-minus:active::before,
+.input-range-elem-plus:active::before,
+.input-range-elem-plus:active::after {
 	background-color: #81b3d2;
 }
 
