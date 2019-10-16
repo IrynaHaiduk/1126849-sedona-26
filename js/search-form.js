@@ -1,32 +1,40 @@
-var button = document.querySelector(".search-button");
-var form = document.querySelector(".modal-form");
-var date = form.querySelector("[name=arrival-date]");
-var search = form.querySelector("form");
-var data2 = form.querySelector("[name=depature-date]");
-var adults = form.querySelector("[name=adults]");
-var children = form.querySelector("[name=children]");
+"use strict";
 
-"use strict"; (function() { form.classList.add("modal-close");})();
-button.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  form.classList.add("modal-show");
-  date.focus();
-});
+(function () {
+	var button = document.querySelector(".search-button");
+	var popup = document.querySelector(".form-wrap");
+	var date = popup.querySelector("[name=arrival-date]");
+	var search = popup.querySelector(".search-form");
+	var date2 = popup.querySelector("[name=depature-date]");
+	var amount1 = popup.querySelector("[name=adults]");
+	var amount2 = popup.querySelector("[name=children]");
 
-search.addEventListener("submit", function (evt) {
-    if (!date.value || !date2.value || !adults.value || !children.value) {
-      evt.preventDefault();
-      form.classList.add("modal-error");
+  popup.classList.add("modal-close");
+  
+	button.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		popup.classList.add("modal-show");
+		date.focus();
+	});
 
-    }
-  });
+  function removeModalErrorClass () {
+    popup.classList.remove("modal-error");
+  }
+  
+	search.addEventListener("submit", function (evt) {
+		evt.preventDefault();
+		if (!date.value || !date2.value || !amount1.value || !amount2.value) {
+      popup.classList.add("modal-error");
+      setTimeout(removeModalErrorClass, 500);
+		}
+	});
 
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (form.classList.contains("modal-show")) {
-        form.classList.remove("modal-show");
-
-      }
-    }
-  });
+	window.addEventListener("keydown", function (evt) {
+		if (evt.keyCode === 27) {
+			evt.preventDefault();
+			if (popup.classList.contains("modal-show")) {
+				popup.classList.remove("modal-show");
+			}
+		}
+	});
+})();
