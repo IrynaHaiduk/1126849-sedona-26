@@ -41,7 +41,7 @@
 		evt.preventDefault();
 		if (!date.value || !date2.value || !amount1.value || !amount2.value) {
 			popup.classList.remove("modal-error");
-			
+
 			popup.classList.add("modal-error");
 		} else { 
 		 search.submit();
