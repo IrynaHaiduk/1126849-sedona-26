@@ -10,17 +10,11 @@ popup.classList.add("modal-close");
 
 
 button.addEventListener("click", function (evt) {
-	console.log('нажала на кнопку button и вывела ее значение');
-	console.log(button);
 	evt.preventDefault();
 
-	console.log('проверяю что возаращает условие popup.classList.contains("modal-show")', popup.classList.contains("modal-show"));
-
-	if (popup.classList.contains("modal-show")) {
-		console.log('у popup есть класс modal-show, а значит класс удаляем');
+	if (popup.classList.contains("modal-show")) {	
 		popup.classList.remove("modal-show");
 	} else {
-		console.log('у popup НЕТ класса modal-show, а значит класс выставляем');
 		popup.classList.add("modal-show");
 	}
 });

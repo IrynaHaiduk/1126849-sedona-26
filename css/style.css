@@ -413,7 +413,7 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	color: #000000;
 	background-color: #f2f2f2;
-	border: none;
+	border: 2px solid #f2f2f2;
 	padding: 8px 11px;
 	width: 345px;
 	text-transform: uppercase;
@@ -441,11 +441,12 @@ input[type="radio"].visually-hidden {
 
 .search-item input:hover {
 	background-color: #ebebeb;
+	border-color: #ebebeb;
 }
 
 .search-item input:focus {
 	background-color: #ffffff;
-	border: 2px solid #e5e5e5;
+	border-color: #e5e5e5;
 	outline: none;
 }
 
@@ -518,6 +519,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 459px;
 	margin-bottom: 55px;
+	cursor: pointer;
 }
 
 .search-hotels:hover,
