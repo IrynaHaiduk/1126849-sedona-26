@@ -796,10 +796,6 @@ input[type="radio"].visually-hidden {
 	        transform: scale(1.1);
 }
 
-.range-toggle:hover::after {
-	top: -1px;
-}
-
 .range-toggle:after {
 	content: " ";
 	background-color: #b1b1b1;
