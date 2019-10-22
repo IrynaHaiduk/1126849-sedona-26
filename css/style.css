@@ -791,8 +791,9 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle:hover {
- border-width: 12px;
- top: -11px;
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .range-toggle:hover::after {
@@ -976,7 +977,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: -1px;
+	margin-top: -1px;
 }
 
 .hotels-image {
