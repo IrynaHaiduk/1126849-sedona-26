@@ -1,7 +1,6 @@
 ﻿# Личный проект «Седона»
 
-<<<<<<< HEAD
-* Студент: [Ирина Гайдук](https://up.htmlacademy.ru/htmlcss/26/user/1126849).
+ Студент: [Ирина Гайдук](https://up.htmlacademy.ru/htmlcss/26/user/1126849).
 * Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim)
 >>>>>>> f58b4a1d78dfff2be2dd191eae3b27072c379dec
 
