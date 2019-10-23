@@ -299,6 +299,7 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 	width: 400px;
 	padding-top: 47px;
+	padding-bottom: 47px;
 }
 
 .white p,
@@ -882,10 +883,12 @@ input[type="radio"].visually-hidden {
 .sorting-hotels-title {
 	margin: 0;
 	margin-right: 40px;
+	font-weight: 400;
 }
 
 .sorting span {
 	font-size: 21px;
+	font-weight: 700;
 	line-height: 26px;
 	margin-right: 49px;
 }
@@ -1064,23 +1067,22 @@ input[type="radio"].visually-hidden {
 }
 .stars {
 	background-color: #ffffff ;
-	background-repeat: no-repeat;
+	background-image: url(../img/star.svg);
+	background-repeat: space;
 	height: 17px;
-}
-.stars-four {
-	background-image: url(../img/four-stars.png);
-	width: 90px;	
-}
+   }
 
-.stars-three {
-	background-image: url(../img/three-stars.png);
+   .stars-four {
+	width: 89px; 
+   }
+   
+   .stars-three {
 	width: 65px;
-}
-
-.stars-two {
-	background-image: url(../img/two-stars.png);
+   }
+   
+   .stars-two {
 	width: 41px;
-}
+   }
 
 .rating {
 	color: #666666;

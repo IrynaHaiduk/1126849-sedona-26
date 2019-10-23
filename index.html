@@ -178,7 +178,7 @@
         <p class="search-sub-title">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button" class="search-button">
+        <button type="button" class="search-button" name="search-button" aria-label="search-hotels">
           Поиск гостиницы в Седоне
         </button>
         <div class="sedona-map">
@@ -193,7 +193,7 @@
               <div class="search-item">
                 <label for="arrival-date">Дата заезда:</label>
                 <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
-                <button type="button" class="calendar">
+                <button type="button" class="calendar" name="calendar" aria-label="show-calendar">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" aria-label="Календарь">
                     <path
                       d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 01-.437.459H1.75a.45.45 0 01-.438-.459V3.862a.45.45 0 01.438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
@@ -205,7 +205,7 @@
               <div class="search-item">
                 <label for="depature-date">Дата выезда:</label>
                 <input id="depature-date" type="text" name="depature-date" placeholder="4 июля 2017">
-                <button type="button" class="calendar">
+                <button type="button" class="calendar" name="calendar" aria-label="show-calendar">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" aria-label="Календарь">
                     <path
                       d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 01-.437.459H1.75a.45.45 0 01-.438-.459V3.862a.45.45 0 01.438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
@@ -218,21 +218,21 @@
                 <div class="adults-amount">
                   <label for="adults-amount">Взрослые:</label>
                   <div class="input-range-elem">
-                    <button type="button" class="input-range-elem-minus"> </button>
+                    <button type="button" class="input-range-elem-minus" name="elem-minus" aria-label="decrease-amount"><span class="visually-hidden">Уменьшить количество</span></button>
                     <input id="adults-amount" type="text" name="adults" placeholder="2" class="amount-input plus">
-                    <button type="button" class="input-range-elem-plus"> </button>
+                    <button type="button" class="input-range-elem-plus" name="elem-plus" aria-label="increase-amount"><span class="visually-hidden">Увеличить количество</span></button>
                   </div>
                 </div>
                 <div class="children-amount">
                   <label for="children-amount">Дети:</label>
                   <div class="input-range-elem">
-                    <button type="button" class="input-range-elem-minus"> </button>
+                    <button type="button" class="input-range-elem-minus" name="elem-minus" aria-label="decrease-amount"><span class="visually-hidden">Уменьшить количество</span></button>
                     <input id="children-amount" type="text" name="children" placeholder="0" class="amount-input plus">
-                    <button type="button" class="input-range-elem-plus"> </button>
+                    <button type="button" class="input-range-elem-plus" name="elem-plus" aria-label="increase-amount"><span class="visually-hidden">Увеличить количество</span></button>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="search-hotels">Найти</button>
+              <button type="submit" class="search-hotels" name="find" aria-label="find-hotels">Найти</button>
             </fieldset>
           </form>
         </div>
