@@ -218,17 +218,17 @@
                 <div class="adults-amount">
                   <label for="adults-amount">Взрослые:</label>
                   <div class="input-range-elem">
-                    <button type="button" class="input-range-elem-minus" name="elem-minus" aria-label="decrease-amount"><span class="visually-hidden">Уменьшить количество</span></button>
-                    <input id="adults-amount" type="text" name="adults" placeholder="2" class="amount-input plus">
-                    <button type="button" class="input-range-elem-plus" name="elem-plus" aria-label="increase-amount"><span class="visually-hidden">Увеличить количество</span></button>
+                    <button id="minus-adults" type="button" class="input-range-elem-minus" name="elem-minus" aria-label="decrease-amount"><span class="visually-hidden">Уменьшить количество</span></button>
+                    <input id="adults-amount" type="text" name="adults" placeholder="2" class="amount-input plus" value="2">
+                    <button id="plus-adults" type="button" class="input-range-elem-plus" name="elem-plus" aria-label="increase-amount"><span class="visually-hidden">Увеличить количество</span></button>
                   </div>
                 </div>
                 <div class="children-amount">
                   <label for="children-amount">Дети:</label>
                   <div class="input-range-elem">
-                    <button type="button" class="input-range-elem-minus" name="elem-minus" aria-label="decrease-amount"><span class="visually-hidden">Уменьшить количество</span></button>
-                    <input id="children-amount" type="text" name="children" placeholder="0" class="amount-input plus">
-                    <button type="button" class="input-range-elem-plus" name="elem-plus" aria-label="increase-amount"><span class="visually-hidden">Увеличить количество</span></button>
+                    <button id="minus-children" type="button" class="input-range-elem-minus" name="elem-minus" aria-label="decrease-amount"><span class="visually-hidden">Уменьшить количество</span></button>
+                    <input id="children-amount" type="text" name="children" placeholder="0" class="amount-input plus" value="0">
+                    <button id="plus-children" type="button" class="input-range-elem-plus" name="elem-plus" aria-label="increase-amount"><span class="visually-hidden">Увеличить количество</span></button>
                   </div>
                 </div>
               </div>
@@ -287,7 +287,7 @@
     </footer>
   </div>
 
-  <script src="js/search-form-min.js">
+  <script src="js/search-form.js">
   </script>
 </body>
 
