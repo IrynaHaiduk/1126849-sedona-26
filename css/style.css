@@ -131,6 +131,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:link {
 	color: #000000;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .site-navigation a:visited {
@@ -396,6 +398,8 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	z-index: 2;
 	cursor: pointer;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .search-button:hover,
@@ -434,6 +438,8 @@ input[type="radio"].visually-hidden {
 	background-color: #f2f2f2;
 	cursor: pointer;
 	outline: none;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .calendar:hover path,
@@ -456,6 +462,9 @@ input[type="radio"].visually-hidden {
 	padding: 5px 8px;
 	width: 345px;
 	text-transform: uppercase;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+	
 }
 
 .search-item ::-webkit-input-placeholder {
@@ -559,6 +568,8 @@ input[type="radio"].visually-hidden {
 	width: 459px;
 	margin-bottom: 55px;
 	cursor: pointer;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .search-hotels:hover,
@@ -654,6 +665,11 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 }
 
+.filter-input + label::before {
+    transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+
 .filter-input:not(:checked)+label::before {
 	content: "";
 	position: absolute;
@@ -669,6 +685,7 @@ input[type="radio"].visually-hidden {
 .filter-input:not(:checked):disabled+label::before {
 	background-image: url("../img/checkbox-off-disabled.svg");
 }
+
 
 .filter-input:checked+label::before {
 	content: "";
@@ -829,6 +846,8 @@ input[type="radio"].visually-hidden {
 	border-radius: 2px;
 	cursor: pointer;
 	width: 136px;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .btn-transparent:hover {
@@ -897,6 +916,8 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 2px dotted #81b3d2;
 	cursor: pointer;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .sorting-input:checked+label {
@@ -935,7 +956,9 @@ input[type="radio"].visually-hidden {
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
-	        user-select: none;
+			user-select: none;
+			transition-duration: 0.6s;
+			transition-timing-function: ease;
 }
 
 .sorting-direction-item path {
@@ -993,6 +1016,8 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 26px;
 	margin-top: -5px;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .hotels-item h3:hover,
@@ -1094,6 +1119,8 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 	color: #ffffff;
 	background-color: #81b3d2;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .more-details:hover,
@@ -1110,6 +1137,8 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 	color: #ffffff;
 	background-color: #766357;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .book:hover,
@@ -1180,6 +1209,8 @@ input[type="radio"].visually-hidden {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	cursor: pointer;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 
 }
 
@@ -1222,6 +1253,8 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 115px;
 	height: 41px;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 }
 
 .footer-copyright span {
@@ -1246,7 +1279,9 @@ input[type="radio"].visually-hidden {
 	background-color: #f2f2f2;
 	position: relative;
 	outline: none;
-    border: none;
+	border: none;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
 
 }
 
